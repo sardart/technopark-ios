@@ -53,7 +53,13 @@ class ViewController: UIViewController {
             tmp.append(post)
         }
         self.posts = tmp
-        print(posts)
+        
+        guard let post = self.posts.first else { return }
+        
+        print("id: \(post.id)")
+        print("title: \(post.title)")
+        print("body: \(post.body)")
+        print("user id: \(post.userId)")
     }
     
     

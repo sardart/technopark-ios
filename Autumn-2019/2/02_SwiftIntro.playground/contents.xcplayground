@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Переменные и константы'/>
+        <page name='Коллекции'/>
+        <page name='ООП'/>
+        <page name='Протоколы и расширения'/>
+        <page name='Структуры'/>
+        <page name='Optionals'/>
+        <page name='Блоки и обработка массивов'/>
+        <page name='ARC'/>
+    </pages>
+</playground>

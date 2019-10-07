@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="75m-NV-e0c">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Что-то крутое-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="lecture3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple" translatesAutoresizingMaskIntoConstraints="NO" id="pZx-cs-hDg">
+                                <rect key="frame" x="24" y="112" width="72" height="72"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="72" id="d7k-oN-szZ"/>
+                                    <constraint firstAttribute="height" constant="72" id="fT2-ZS-mGB"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="UKw-8S-Dxd">
+                                <rect key="frame" x="24" y="208" width="366" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R3M-HE-Nu1">
+                                        <rect key="frame" x="0.0" y="0.0" width="96.5" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GIM-4h-ECI">
+                                        <rect key="frame" x="108.5" y="0.0" width="97" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Te2-5B-iKq">
+                                        <rect key="frame" x="217.5" y="0.0" width="96.5" height="40"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uar-Bo-bcO">
+                                        <rect key="frame" x="326" y="0.0" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="9gw-Ez-OJw"/>
+                                            <constraint firstAttribute="height" constant="40" id="ULI-kb-eYa"/>
+                                        </constraints>
+                                        <state key="normal" image="square.and.arrow.up" catalog="system">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="ABH-lS-l92" kind="show" identifier="MySegue" id="2Ml-Hs-dEe"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LQS-jZ-N65"/>
+                                    <constraint firstItem="R3M-HE-Nu1" firstAttribute="width" secondItem="GIM-4h-ECI" secondAttribute="width" id="bEW-vp-yMi"/>
+                                    <constraint firstItem="Te2-5B-iKq" firstAttribute="width" secondItem="GIM-4h-ECI" secondAttribute="width" id="zMR-m8-1rv"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UKw-8S-Dxd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="LcI-mG-1Dv"/>
+                            <constraint firstItem="pZx-cs-hDg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="gfg-cd-57e"/>
+                            <constraint firstItem="UKw-8S-Dxd" firstAttribute="top" secondItem="pZx-cs-hDg" secondAttribute="bottom" constant="24" id="owf-Dy-QnB"/>
+                            <constraint firstItem="pZx-cs-hDg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="pFP-P0-1JY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UKw-8S-Dxd" secondAttribute="trailing" constant="24" id="rEq-Le-0zr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Что-то крутое" id="UuU-dz-RpR">
+                        <barButtonItem key="rightBarButtonItem" image="pencil" catalog="system" id="HlT-uz-v48">
+                            <connections>
+                                <action selector="didTapEditButton:" destination="BYZ-38-t0r" id="DHI-dU-dKX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="imageView" destination="pZx-cs-hDg" id="hz7-dB-CKe"/>
+                        <outlet property="moreButton" destination="uar-Bo-bcO" id="5R0-FR-0ba"/>
+                        <outletCollection property="buttons" destination="R3M-HE-Nu1" collectionClass="NSMutableArray" id="83K-yQ-5hU"/>
+                        <outletCollection property="buttons" destination="GIM-4h-ECI" collectionClass="NSMutableArray" id="s2Z-3N-ihU"/>
+                        <outletCollection property="buttons" destination="Te2-5B-iKq" collectionClass="NSMutableArray" id="j1O-Xg-lz2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="138.61607142857142"/>
+        </scene>
+        <!--Edit View Controller-->
+        <scene sceneID="ERE-ij-hB5">
+            <objects>
+                <viewController storyboardIdentifier="EditViewController" id="ioY-AB-dTn" customClass="EditViewController" customModule="lecture3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HAZ-zy-2Na">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EditViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cAV-3r-elq">
+                                <rect key="frame" x="136" y="438" width="142" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cAV-3r-elq" firstAttribute="centerY" secondItem="HAZ-zy-2Na" secondAttribute="centerY" id="5bi-2P-TLg"/>
+                            <constraint firstItem="cAV-3r-elq" firstAttribute="centerX" secondItem="HAZ-zy-2Na" secondAttribute="centerX" id="IkA-Oj-Jag"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xcn-9l-Vif"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="l6i-Sf-ouU"/>
+                    <connections>
+                        <outlet property="textLabel" destination="cAV-3r-elq" id="y8o-5I-5vZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vs7-nQ-N5I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2738" y="139"/>
+        </scene>
+        <!--Segue View Controller-->
+        <scene sceneID="Fay-jN-gGg">
+            <objects>
+                <viewController id="ABH-lS-l92" customClass="SegueViewController" customModule="lecture3App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4td-Ua-3y2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SegueViewController" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkA-6w-pIZ">
+                                <rect key="frame" x="107" y="438" width="200" height="20.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="BCE-Ht-mtu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pkA-6w-pIZ" firstAttribute="centerX" secondItem="4td-Ua-3y2" secondAttribute="centerX" id="AX5-MM-Uog"/>
+                            <constraint firstItem="pkA-6w-pIZ" firstAttribute="centerY" secondItem="4td-Ua-3y2" secondAttribute="centerY" id="chN-RG-onB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2aZ-1T-49c"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TI1-kE-FC7"/>
+                    <connections>
+                        <outlet property="textLabel" destination="pkA-6w-pIZ" id="GMR-60-jWi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Dw-7h-aI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1823.1884057971015" y="139.95535714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="dmy-cV-9Yn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="75m-NV-e0c" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TKP-Uj-kTn">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nuI-IN-ycj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kzs-uD-rJY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140.57971014492756" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="apple" width="1200" height="750"/>
+        <image name="pencil" catalog="system" width="64" height="58"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+    </resources>
+</document>

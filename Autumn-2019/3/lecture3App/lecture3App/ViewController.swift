@@ -64,10 +64,10 @@ class ViewController: UIViewController {
         
         editViewController.text = "heeeeey"
                 
-        viewController.modalPresentationStyle = .fullScreen
+//        editViewController.modalPresentationStyle = .fullScreen
         present(editViewController, animated: true, completion: nil)
 
-        // navigationController?.pushViewController(editViewController, animated: true)
+//        navigationController?.pushViewController(editViewController, animated: true)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

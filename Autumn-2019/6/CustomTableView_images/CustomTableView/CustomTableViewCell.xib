@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ApC-eU-wYP" customClass="CustomTableViewCell" customModule="CustomTableView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ApC-eU-wYP" id="7bZ-eY-zHR">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="czG-oR-Dqh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                    </imageView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="CV6-eE-bao">
+                        <rect key="frame" x="197" y="12" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="czG-oR-Dqh" secondAttribute="trailing" id="Eve-Ex-Tqk"/>
+                    <constraint firstItem="CV6-eE-bao" firstAttribute="centerY" secondItem="7bZ-eY-zHR" secondAttribute="centerY" id="Lol-0X-lI9"/>
+                    <constraint firstItem="czG-oR-Dqh" firstAttribute="leading" secondItem="7bZ-eY-zHR" secondAttribute="leading" id="Qrs-cS-tt6"/>
+                    <constraint firstAttribute="bottom" secondItem="czG-oR-Dqh" secondAttribute="bottom" id="VUQ-k5-1aR"/>
+                    <constraint firstItem="czG-oR-Dqh" firstAttribute="top" secondItem="7bZ-eY-zHR" secondAttribute="top" id="vKG-k6-VRB"/>
+                    <constraint firstItem="CV6-eE-bao" firstAttribute="centerX" secondItem="7bZ-eY-zHR" secondAttribute="centerX" id="voT-ZB-evy"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="loadingIndicator" destination="CV6-eE-bao" id="lCg-eJ-t0t"/>
+                <outlet property="myImageView" destination="czG-oR-Dqh" id="AtS-IM-OPs"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="-74.330357142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

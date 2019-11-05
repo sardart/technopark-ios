@@ -1,36 +1,45 @@
 //
 //  ViewController.swift
-//  GestureRecognizers
+//  PinLayoutExample
 //
 //  Created by Artur Sardaryan on 11/5/19.
 //  Copyright © 2019 Artur Sardaryan. All rights reserved.
 //
 
 import UIKit
+import PinLayout
 
 class ViewController: UIViewController {
-    
+
     private let magicView = MagicView()
+    private let magicButton = UIButton()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        magicButton.backgroundColor = .black
         magicView.backgroundColor = .red
-        magicView.image = UIImage(named: "s1200")
         
-        view.addSubview(magicView)
-        magicView.clipsToBounds = true
-        layout()
+        [magicView, magicButton].forEach { view.addSubview($0) }
     }
     
-    func layout() {
-        magicView.translatesAutoresizingMaskIntoConstraints = false
-        magicView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
-        magicView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
-        magicView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor).isActive = true
-        magicView.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        magicView.pin
+            .center(50)
+            .size(10)
+        
+        magicButton.pin
+            .below(of: magicView, aligned: .center)
+            .marginTop(12)
+            .height(40)
+            .width(50)
     }
+
+
 }
+
 
 final class MagicView: UIView {
     private let imageView = UIImageView()

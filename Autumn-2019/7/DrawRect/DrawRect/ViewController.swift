@@ -48,7 +48,6 @@ final class CustomView: UIView {
                                     end: endPoint,
                                     options: [])
         
-        // прямоугольник
         let pathRect = CGRect(x: 24, y: 48, width: 128, height: 64)
         let path = UIBezierPath(roundedRect: pathRect, cornerRadius: 8)
         
@@ -59,7 +58,6 @@ final class CustomView: UIView {
         path.lineWidth = 4
         path.stroke()
         
-        // круг
         UIColor.red.setFill()
         let circleCenter = CGPoint(x: rect.midX, y: 150)
         let circlePath = UIBezierPath(arcCenter: circleCenter,
@@ -69,12 +67,21 @@ final class CustomView: UIView {
                                       clockwise: true)
         circlePath.fill()
 
-        // line
         let center = CGPoint(x: rect.midX, y: rect.midY)
         let linePath = UIBezierPath()
         linePath.move(to: center)
         linePath.addLine(to: CGPoint(x: rect.midX + 100, y: rect.midY))
         linePath.lineWidth = 4
         linePath.stroke()
+    }
+    
+    private func setupViews() {
+        let view = UIView()
+        
+        view.backgroundColor = .yellow
+        addSubview(view)
+        view.frame = self.frame
+        view.layer.cornerRadius = view.frame.size.width / 2
+        view.layer.borderColor = UIColor.black.cgColor
     }
 }

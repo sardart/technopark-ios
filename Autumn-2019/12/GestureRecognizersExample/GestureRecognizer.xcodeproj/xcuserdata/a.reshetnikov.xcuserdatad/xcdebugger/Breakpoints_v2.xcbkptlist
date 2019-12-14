@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D06DEC4B-7D90-4728-81D8-74C69FA8E7DF"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "109612DE-9216-4804-A2A4-AF5D9ABFD246"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "GestureRecognizer/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "279"
+            endingLineNumber = "279"
+            landmarkName = "handleButtonTap(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "109612DE-9216-4804-A2A4-AF5D9ABFD246 - aa05a73777b46f6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GestureRecognizer.ViewController.(handleButtonTap in _D0E5F27020DEE3873732C34649C4E94C)(__C.UIButton) -&gt; ()"
+                  moduleName = "GestureRecognizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.reshetnikov/Desktop/lecture12/GestureRecognizersExample/GestureRecognizer/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "279"
+                  endingLineNumber = "279"
+                  offsetFromSymbolStart = "290">
+               </Location>
+               <Location
+                  uuid = "109612DE-9216-4804-A2A4-AF5D9ABFD246 - 483cfbad2e9311ae"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in GestureRecognizer.ViewController.(handleButtonTap in _D0E5F27020DEE3873732C34649C4E94C)(__C.UIButton) -&gt; ()"
+                  moduleName = "GestureRecognizer"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.reshetnikov/Desktop/lecture12/GestureRecognizersExample/GestureRecognizer/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "280"
+                  endingLineNumber = "280"
+                  offsetFromSymbolStart = "33">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

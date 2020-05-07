@@ -1,0 +1,6 @@
+framework module Pods_Lecture11App {
+  umbrella header "Pods-Lecture11App-umbrella.h"
+
+  export *
+  module * { export * }
+}

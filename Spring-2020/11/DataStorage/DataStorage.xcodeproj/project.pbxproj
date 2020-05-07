@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85C871C67F886F7703D4ECC6 /* Pods_DataStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8785F710B1045348AB4FA41F /* Pods_DataStorage.framework */; };
+		9037A8C71EA2196800329EB0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8C61EA2196800329EB0 /* AppDelegate.swift */; };
+		9037A8C91EA2196800329EB0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8C81EA2196800329EB0 /* ViewController.swift */; };
+		9037A8CC1EA2196800329EB0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9037A8CA1EA2196800329EB0 /* Main.storyboard */; };
+		9037A8CF1EA2196800329EB0 /* DataStorage.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8CD1EA2196800329EB0 /* DataStorage.xcdatamodeld */; };
+		9037A8D11EA2196800329EB0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9037A8D01EA2196800329EB0 /* Assets.xcassets */; };
+		9037A8D41EA2196800329EB0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9037A8D21EA2196800329EB0 /* LaunchScreen.storyboard */; };
+		9037A8DC1EA2203100329EB0 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8DB1EA2203100329EB0 /* DataSourceProtocol.swift */; };
+		9037A8DE1EA2207B00329EB0 /* DataSourceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8DD1EA2207B00329EB0 /* DataSourceDelegate.swift */; };
+		9037A8E11EA221B800329EB0 /* CoreDataDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8E01EA221B800329EB0 /* CoreDataDataSource.swift */; };
+		9037A8E31EA221C600329EB0 /* RealmDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8E21EA221C600329EB0 /* RealmDataSource.swift */; };
+		9037A8E71EA22AED00329EB0 /* DataDisplayModuleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8E61EA22AED00329EB0 /* DataDisplayModuleInput.swift */; };
+		9037A8E91EA22B7200329EB0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8E81EA22B7200329EB0 /* Person.swift */; };
+		9037A8EB1EA2300300329EB0 /* DataDisplayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8EA1EA2300300329EB0 /* DataDisplayViewController.swift */; };
+		9037A8ED1EA2311B00329EB0 /* RealmPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8EC1EA2311B00329EB0 /* RealmPerson.swift */; };
+		9037A8F01EA2325E00329EB0 /* DataManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8EF1EA2325E00329EB0 /* DataManagerProtocol.swift */; };
+		9037A8F21EA232BC00329EB0 /* RealmDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8F11EA232BC00329EB0 /* RealmDataManager.swift */; };
+		9037A8F41EA232FB00329EB0 /* Person+Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A8F31EA232FB00329EB0 /* Person+Realm.swift */; };
+		9037A9041EA235A300329EB0 /* CorePerson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A9021EA235A300329EB0 /* CorePerson+CoreDataClass.swift */; };
+		9037A9051EA235A300329EB0 /* CorePerson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A9031EA235A300329EB0 /* CorePerson+CoreDataProperties.swift */; };
+		9037A9091EA2369B00329EB0 /* CoreDataDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A9081EA2369B00329EB0 /* CoreDataDataManager.swift */; };
+		9037A90B1EA23A5800329EB0 /* Person+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9037A90A1EA23A5800329EB0 /* Person+CoreData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0030D88C3FA2AD9D5338FBB9 /* Pods-DataStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStorage.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataStorage/Pods-DataStorage.debug.xcconfig"; sourceTree = "<group>"; };
+		3B8A14B4008625FB0064AC4D /* Pods-DataStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataStorage.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataStorage/Pods-DataStorage.release.xcconfig"; sourceTree = "<group>"; };
+		8785F710B1045348AB4FA41F /* Pods_DataStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9037A8C31EA2196800329EB0 /* DataStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9037A8C61EA2196800329EB0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9037A8C81EA2196800329EB0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9037A8CB1EA2196800329EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9037A8CE1EA2196800329EB0 /* DataStorage.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataStorage.xcdatamodel; sourceTree = "<group>"; };
+		9037A8D01EA2196800329EB0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9037A8D31EA2196800329EB0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9037A8D51EA2196800329EB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9037A8DB1EA2203100329EB0 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
+		9037A8DD1EA2207B00329EB0 /* DataSourceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceDelegate.swift; sourceTree = "<group>"; };
+		9037A8E01EA221B800329EB0 /* CoreDataDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataDataSource.swift; sourceTree = "<group>"; };
+		9037A8E21EA221C600329EB0 /* RealmDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataSource.swift; sourceTree = "<group>"; };
+		9037A8E61EA22AED00329EB0 /* DataDisplayModuleInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDisplayModuleInput.swift; sourceTree = "<group>"; };
+		9037A8E81EA22B7200329EB0 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9037A8EA1EA2300300329EB0 /* DataDisplayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataDisplayViewController.swift; sourceTree = "<group>"; };
+		9037A8EC1EA2311B00329EB0 /* RealmPerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmPerson.swift; sourceTree = "<group>"; };
+		9037A8EF1EA2325E00329EB0 /* DataManagerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerProtocol.swift; sourceTree = "<group>"; };
+		9037A8F11EA232BC00329EB0 /* RealmDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmDataManager.swift; sourceTree = "<group>"; };
+		9037A8F31EA232FB00329EB0 /* Person+Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+Realm.swift"; sourceTree = "<group>"; };
+		9037A9021EA235A300329EB0 /* CorePerson+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CorePerson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9037A9031EA235A300329EB0 /* CorePerson+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CorePerson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9037A9081EA2369B00329EB0 /* CoreDataDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataDataManager.swift; sourceTree = "<group>"; };
+		9037A90A1EA23A5800329EB0 /* Person+CoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+CoreData.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9037A8C01EA2196800329EB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85C871C67F886F7703D4ECC6 /* Pods_DataStorage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3F538ABF656FBCD5D85EF6C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8785F710B1045348AB4FA41F /* Pods_DataStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9037A8BA1EA2196800329EB0 = {
+			isa = PBXGroup;
+			children = (
+				9037A8C51EA2196800329EB0 /* DataStorage */,
+				9037A8C41EA2196800329EB0 /* Products */,
+				D6DBA299B6DA8A7010150FB2 /* Pods */,
+				3F538ABF656FBCD5D85EF6C9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9037A8C41EA2196800329EB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9037A8C31EA2196800329EB0 /* DataStorage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9037A8C51EA2196800329EB0 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				9037A8EE1EA2321F00329EB0 /* DataManager */,
+				9037A8C61EA2196800329EB0 /* AppDelegate.swift */,
+				9037A8C81EA2196800329EB0 /* ViewController.swift */,
+				9037A8CA1EA2196800329EB0 /* Main.storyboard */,
+				9037A8D01EA2196800329EB0 /* Assets.xcassets */,
+				9037A8D21EA2196800329EB0 /* LaunchScreen.storyboard */,
+				9037A8D51EA2196800329EB0 /* Info.plist */,
+				9037A8CD1EA2196800329EB0 /* DataStorage.xcdatamodeld */,
+				9037A8DF1EA220C400329EB0 /* DataSource */,
+				9037A8E61EA22AED00329EB0 /* DataDisplayModuleInput.swift */,
+				9037A8FD1EA2346700329EB0 /* Model */,
+				9037A8EA1EA2300300329EB0 /* DataDisplayViewController.swift */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
+		9037A8DF1EA220C400329EB0 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				9037A8DB1EA2203100329EB0 /* DataSourceProtocol.swift */,
+				9037A8DD1EA2207B00329EB0 /* DataSourceDelegate.swift */,
+				9037A8E51EA2226300329EB0 /* CoreData */,
+				9037A8E41EA2225400329EB0 /* Realm */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		9037A8E41EA2225400329EB0 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				9037A8E21EA221C600329EB0 /* RealmDataSource.swift */,
+			);
+			name = Realm;
+			sourceTree = "<group>";
+		};
+		9037A8E51EA2226300329EB0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9037A8E01EA221B800329EB0 /* CoreDataDataSource.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		9037A8EE1EA2321F00329EB0 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				9037A8EF1EA2325E00329EB0 /* DataManagerProtocol.swift */,
+				9037A8F11EA232BC00329EB0 /* RealmDataManager.swift */,
+				9037A9081EA2369B00329EB0 /* CoreDataDataManager.swift */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
+		9037A8FD1EA2346700329EB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9037A9021EA235A300329EB0 /* CorePerson+CoreDataClass.swift */,
+				9037A9031EA235A300329EB0 /* CorePerson+CoreDataProperties.swift */,
+				9037A8E81EA22B7200329EB0 /* Person.swift */,
+				9037A8EC1EA2311B00329EB0 /* RealmPerson.swift */,
+				9037A8F31EA232FB00329EB0 /* Person+Realm.swift */,
+				9037A90A1EA23A5800329EB0 /* Person+CoreData.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D6DBA299B6DA8A7010150FB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0030D88C3FA2AD9D5338FBB9 /* Pods-DataStorage.debug.xcconfig */,
+				3B8A14B4008625FB0064AC4D /* Pods-DataStorage.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9037A8C21EA2196800329EB0 /* DataStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9037A8D81EA2196800329EB0 /* Build configuration list for PBXNativeTarget "DataStorage" */;
+			buildPhases = (
+				708A9B61C9060D0D441ADABC /* [CP] Check Pods Manifest.lock */,
+				9037A8BF1EA2196800329EB0 /* Sources */,
+				9037A8C01EA2196800329EB0 /* Frameworks */,
+				9037A8C11EA2196800329EB0 /* Resources */,
+				2FCC68CD0E32D1C3764EBDB8 /* [CP] Embed Pods Frameworks */,
+				C5285434CE3B42A44A9875B8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataStorage;
+			productName = DataStorage;
+			productReference = 9037A8C31EA2196800329EB0 /* DataStorage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9037A8BB1EA2196800329EB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = TechPark;
+				TargetAttributes = {
+					9037A8C21EA2196800329EB0 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = G3W5J6328W;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9037A8BE1EA2196800329EB0 /* Build configuration list for PBXProject "DataStorage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 9037A8BA1EA2196800329EB0;
+			productRefGroup = 9037A8C41EA2196800329EB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9037A8C21EA2196800329EB0 /* DataStorage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9037A8C11EA2196800329EB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9037A8D41EA2196800329EB0 /* LaunchScreen.storyboard in Resources */,
+				9037A8D11EA2196800329EB0 /* Assets.xcassets in Resources */,
+				9037A8CC1EA2196800329EB0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2FCC68CD0E32D1C3764EBDB8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataStorage/Pods-DataStorage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		708A9B61C9060D0D441ADABC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C5285434CE3B42A44A9875B8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataStorage/Pods-DataStorage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9037A8BF1EA2196800329EB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9037A8E71EA22AED00329EB0 /* DataDisplayModuleInput.swift in Sources */,
+				9037A9051EA235A300329EB0 /* CorePerson+CoreDataProperties.swift in Sources */,
+				9037A8DC1EA2203100329EB0 /* DataSourceProtocol.swift in Sources */,
+				9037A8ED1EA2311B00329EB0 /* RealmPerson.swift in Sources */,
+				9037A8C91EA2196800329EB0 /* ViewController.swift in Sources */,
+				9037A8F41EA232FB00329EB0 /* Person+Realm.swift in Sources */,
+				9037A8EB1EA2300300329EB0 /* DataDisplayViewController.swift in Sources */,
+				9037A8CF1EA2196800329EB0 /* DataStorage.xcdatamodeld in Sources */,
+				9037A8E11EA221B800329EB0 /* CoreDataDataSource.swift in Sources */,
+				9037A8C71EA2196800329EB0 /* AppDelegate.swift in Sources */,
+				9037A9041EA235A300329EB0 /* CorePerson+CoreDataClass.swift in Sources */,
+				9037A90B1EA23A5800329EB0 /* Person+CoreData.swift in Sources */,
+				9037A9091EA2369B00329EB0 /* CoreDataDataManager.swift in Sources */,
+				9037A8E91EA22B7200329EB0 /* Person.swift in Sources */,
+				9037A8F21EA232BC00329EB0 /* RealmDataManager.swift in Sources */,
+				9037A8E31EA221C600329EB0 /* RealmDataSource.swift in Sources */,
+				9037A8DE1EA2207B00329EB0 /* DataSourceDelegate.swift in Sources */,
+				9037A8F01EA2325E00329EB0 /* DataManagerProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9037A8CA1EA2196800329EB0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9037A8CB1EA2196800329EB0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9037A8D21EA2196800329EB0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9037A8D31EA2196800329EB0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9037A8D61EA2196800329EB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9037A8D71EA2196800329EB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9037A8D91EA2196800329EB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0030D88C3FA2AD9D5338FBB9 /* Pods-DataStorage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3W5J6328W;
+				INFOPLIST_FILE = DataStorage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mail.techpark.DataStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		9037A8DA1EA2196800329EB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B8A14B4008625FB0064AC4D /* Pods-DataStorage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3W5J6328W;
+				INFOPLIST_FILE = DataStorage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ru.mail.techpark.DataStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9037A8BE1EA2196800329EB0 /* Build configuration list for PBXProject "DataStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9037A8D61EA2196800329EB0 /* Debug */,
+				9037A8D71EA2196800329EB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9037A8D81EA2196800329EB0 /* Build configuration list for PBXNativeTarget "DataStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9037A8D91EA2196800329EB0 /* Debug */,
+				9037A8DA1EA2196800329EB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9037A8CD1EA2196800329EB0 /* DataStorage.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9037A8CE1EA2196800329EB0 /* DataStorage.xcdatamodel */,
+			);
+			currentVersion = 9037A8CE1EA2196800329EB0 /* DataStorage.xcdatamodel */;
+			path = DataStorage.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9037A8BB1EA2196800329EB0 /* Project object */;
+}

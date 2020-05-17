@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="layers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hzK-O9-J1x">
+                                <rect key="frame" x="57" y="298" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKw-kE-Xdy">
+                                        <rect key="frame" x="85" y="106" width="130" height="88"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="88" id="3a8-Cm-wu7"/>
+                                            <constraint firstAttribute="width" constant="130" id="zOB-Un-hJH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="30"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81162643432617188" green="0.30536481738090515" blue="0.21416985988616943" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="SKw-kE-Xdy" firstAttribute="centerY" secondItem="hzK-O9-J1x" secondAttribute="centerY" id="0Ey-IX-C1C"/>
+                                    <constraint firstItem="SKw-kE-Xdy" firstAttribute="centerX" secondItem="hzK-O9-J1x" secondAttribute="centerX" id="2Iz-bC-qSn"/>
+                                    <constraint firstAttribute="width" constant="300" id="CFQ-6w-Exm"/>
+                                    <constraint firstAttribute="height" constant="300" id="iDS-Mg-7SM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hzK-O9-J1x" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Um6-A3-je3"/>
+                            <constraint firstItem="hzK-O9-J1x" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aNX-jA-80K"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="box" destination="hzK-O9-J1x" id="rYS-5V-wdH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="324"/>
+        </scene>
+    </scenes>
+</document>

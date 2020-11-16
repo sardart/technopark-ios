@@ -15,14 +15,16 @@ final class CitiesContainer {
 
 	class func assemble(with context: CitiesContext) -> CitiesContainer {
         let router = CitiesRouter()
-        let interactor = CitiesInteractor()
+        let interactor = CitiesInteractor(networkManager: NetworkManager.shared)
         let presenter = CitiesPresenter(router: router, interactor: interactor)
-		let viewController = CitiesViewController(output: presenter)
+        let viewController = CitiesViewController(output: presenter)
 
-		presenter.view = viewController
-		presenter.moduleOutput = context.moduleOutput
+        presenter.view = viewController
+        presenter.moduleOutput = context.moduleOutput
 
-		interactor.output = presenter
+        interactor.output = presenter
+        
+        router.viewController = viewController
 
         return CitiesContainer(view: viewController, input: presenter, router: router)
 	}

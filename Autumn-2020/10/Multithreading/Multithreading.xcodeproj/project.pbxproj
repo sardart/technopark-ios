@@ -12,6 +12,12 @@
 		A733E368256F1DD90076C5AA /* TreadItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733E367256F1DD90076C5AA /* TreadItem.swift */; };
 		A733E370256F1F6C0076C5AA /* ThreadWithQOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733E36F256F1F6C0076C5AA /* ThreadWithQOS.swift */; };
 		A733E373256F25280076C5AA /* MutexItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A733E372256F25280076C5AA /* MutexItem.swift */; };
+		A7487B5C2571634B0090BA52 /* DispatchGroupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7487B5B2571634B0090BA52 /* DispatchGroupItem.swift */; };
+		A79D3FD925745A5300EE08FF /* QueueSuspendItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D3FD825745A5300EE08FF /* QueueSuspendItem.swift */; };
+		A79D3FE22574643A00EE08FF /* SimpleOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D3FE12574643A00EE08FF /* SimpleOperation.swift */; };
+		A79D3FE5257465D700EE08FF /* OperationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D3FE4257465D700EE08FF /* OperationResult.swift */; };
+		A79D3FE82574690C00EE08FF /* CancelOperationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D3FE72574690C00EE08FF /* CancelOperationItem.swift */; };
+		A79D3FEC25746EB900EE08FF /* DependencyOperationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79D3FEB25746EB900EE08FF /* DependencyOperationItem.swift */; };
 		A7D948D925706D270003A1FD /* SerialQueueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D948D825706D270003A1FD /* SerialQueueItem.swift */; };
 		A7D948DD25706D8A0003A1FD /* ConcurrentQueueItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D948DC25706D8A0003A1FD /* ConcurrentQueueItem.swift */; };
 		A7D948E0257074BF0003A1FD /* AsyncAfterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D948DF257074BF0003A1FD /* AsyncAfterItem.swift */; };
@@ -34,6 +40,12 @@
 		A733E367256F1DD90076C5AA /* TreadItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreadItem.swift; sourceTree = "<group>"; };
 		A733E36F256F1F6C0076C5AA /* ThreadWithQOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadWithQOS.swift; sourceTree = "<group>"; };
 		A733E372256F25280076C5AA /* MutexItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MutexItem.swift; sourceTree = "<group>"; };
+		A7487B5B2571634B0090BA52 /* DispatchGroupItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchGroupItem.swift; sourceTree = "<group>"; };
+		A79D3FD825745A5300EE08FF /* QueueSuspendItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueSuspendItem.swift; sourceTree = "<group>"; };
+		A79D3FE12574643A00EE08FF /* SimpleOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleOperation.swift; sourceTree = "<group>"; };
+		A79D3FE4257465D700EE08FF /* OperationResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationResult.swift; sourceTree = "<group>"; };
+		A79D3FE72574690C00EE08FF /* CancelOperationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelOperationItem.swift; sourceTree = "<group>"; };
+		A79D3FEB25746EB900EE08FF /* DependencyOperationItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyOperationItem.swift; sourceTree = "<group>"; };
 		A7D948D825706D270003A1FD /* SerialQueueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerialQueueItem.swift; sourceTree = "<group>"; };
 		A7D948DC25706D8A0003A1FD /* ConcurrentQueueItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentQueueItem.swift; sourceTree = "<group>"; };
 		A7D948DF257074BF0003A1FD /* AsyncAfterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAfterItem.swift; sourceTree = "<group>"; };
@@ -83,9 +95,15 @@
 			children = (
 				A7D948D825706D270003A1FD /* SerialQueueItem.swift */,
 				A7D948DC25706D8A0003A1FD /* ConcurrentQueueItem.swift */,
+				A79D3FD825745A5300EE08FF /* QueueSuspendItem.swift */,
 				A7D948DF257074BF0003A1FD /* AsyncAfterItem.swift */,
 				A7D948E2257077560003A1FD /* DWorkItem.swift */,
 				A7D948E52570794C0003A1FD /* SemaphoreItem.swift */,
+				A7487B5B2571634B0090BA52 /* DispatchGroupItem.swift */,
+				A79D3FE12574643A00EE08FF /* SimpleOperation.swift */,
+				A79D3FE4257465D700EE08FF /* OperationResult.swift */,
+				A79D3FE72574690C00EE08FF /* CancelOperationItem.swift */,
+				A79D3FEB25746EB900EE08FF /* DependencyOperationItem.swift */,
 			);
 			path = GCD;
 			sourceTree = "<group>";
@@ -195,6 +213,8 @@
 				A7D948E0257074BF0003A1FD /* AsyncAfterItem.swift in Sources */,
 				A7D948E62570794C0003A1FD /* SemaphoreItem.swift in Sources */,
 				A7F6D08A256F1579000B002D /* TaskViewController.swift in Sources */,
+				A79D3FEC25746EB900EE08FF /* DependencyOperationItem.swift in Sources */,
+				A79D3FE82574690C00EE08FF /* CancelOperationItem.swift in Sources */,
 				A7F6D090256F18DD000B002D /* pthreadItem.swift in Sources */,
 				A7F6D079256F13FC000B002D /* ViewController.swift in Sources */,
 				A7D948DD25706D8A0003A1FD /* ConcurrentQueueItem.swift in Sources */,
@@ -205,9 +225,13 @@
 				A733E370256F1F6C0076C5AA /* ThreadWithQOS.swift in Sources */,
 				A7D948D925706D270003A1FD /* SerialQueueItem.swift in Sources */,
 				A733E368256F1DD90076C5AA /* TreadItem.swift in Sources */,
+				A79D3FE22574643A00EE08FF /* SimpleOperation.swift in Sources */,
+				A7487B5C2571634B0090BA52 /* DispatchGroupItem.swift in Sources */,
 				A7F6D077256F13FC000B002D /* SceneDelegate.swift in Sources */,
+				A79D3FE5257465D700EE08FF /* OperationResult.swift in Sources */,
 				A7D948E3257077560003A1FD /* DWorkItem.swift in Sources */,
 				A70C8F94256F30CC007726DF /* RecursiveLock.swift in Sources */,
+				A79D3FD925745A5300EE08FF /* QueueSuspendItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

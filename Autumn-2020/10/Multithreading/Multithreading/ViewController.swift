@@ -17,9 +17,15 @@ class TableViewController: UITableViewController {
                                  ConditionItem(name: "NSCondition"),
                                  SerialQueueItem(name: "SerialQueue"),
                                  ConcurrentQueueItem(name: "ConcurrentQueue"),
+                                 QueueSuspendItem(name:"QueueSuspendItem"),
                                  AsyncAfterItem(name: "AsyncAfter"),
                                  DWorkItem(name: "DispatchWorkItem"),
-                                 SemaphoreItem(name: "Semaphore")
+                                 SemaphoreItem(name: "Semaphore"),
+                                 DispatchGroupItem(name: "DispatchGroup"),
+                                 SimpleOperation(name: "SimpleOperation"),
+                                 OperationResult(name: "OperationResult"),
+                                 CancelOperationItem(name: "CancelOperationItem"),
+                                 DependencyOperationItem(name: "Dependency for Operations")
     ]
     private let taskSegue = "TaskViewControllerSegue"
 
@@ -40,7 +46,8 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         let item = items[indexPath.row]
-        self.performSegue(withIdentifier: taskSegue, sender: item)
+        item.run()
+//        self.performSegue(withIdentifier: taskSegue, sender: item)
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

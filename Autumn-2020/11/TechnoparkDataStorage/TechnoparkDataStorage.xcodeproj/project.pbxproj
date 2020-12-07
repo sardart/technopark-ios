@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3730E730257E535C0016E52E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3730E72F257E535C0016E52E /* Person.swift */; };
+		3730E734257E54630016E52E /* RealmExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3730E733257E54630016E52E /* RealmExampleViewController.swift */; };
+		378B728D257E276B0049C32C /* AutoFetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B728C257E276A0049C32C /* AutoFetchViewController.swift */; };
+		378B7292257E3C5A0049C32C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 378B7291257E3C5A0049C32C /* DataManager.swift */; };
+		37AE0006257D5D03002C889E /* TestItem+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE0004257D5D03002C889E /* TestItem+CoreDataClass.swift */; };
+		37AE0007257D5D03002C889E /* TestItem+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AE0005257D5D03002C889E /* TestItem+CoreDataProperties.swift */; };
+		37AEFFC6257D2711002C889E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEFFC5257D2711002C889E /* AppDelegate.swift */; };
+		37AEFFC8257D2711002C889E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEFFC7257D2711002C889E /* SceneDelegate.swift */; };
+		37AEFFCD257D2711002C889E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37AEFFCB257D2711002C889E /* Main.storyboard */; };
+		37AEFFCF257D2714002C889E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37AEFFCE257D2714002C889E /* Assets.xcassets */; };
+		37AEFFD2257D2714002C889E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37AEFFD0257D2714002C889E /* LaunchScreen.storyboard */; };
+		37AEFFDC257D276C002C889E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEFFDB257D276C002C889E /* ListViewController.swift */; };
+		37AEFFE2257D34DA002C889E /* UserDefaultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEFFE1257D34DA002C889E /* UserDefaultsViewController.swift */; };
+		37AEFFE7257D3867002C889E /* FileManagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEFFE6257D3867002C889E /* FileManagerViewController.swift */; };
+		37AEFFED257D57F0002C889E /* ManualFetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37AEFFEC257D57F0002C889E /* ManualFetchViewController.swift */; };
+		37AEFFF2257D58E5002C889E /* TechnoparkCoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 37AEFFF0257D58E5002C889E /* TechnoparkCoreDataModel.xcdatamodeld */; };
+		76BEDA2F8630B4C56F48857C /* Pods_TechnoparkDataStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DCEC2D9122EFD0CDCDCF923 /* Pods_TechnoparkDataStorage.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3730E72F257E535C0016E52E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		3730E733257E54630016E52E /* RealmExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExampleViewController.swift; sourceTree = "<group>"; };
+		378B728C257E276A0049C32C /* AutoFetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoFetchViewController.swift; sourceTree = "<group>"; };
+		378B7291257E3C5A0049C32C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		37AE0004257D5D03002C889E /* TestItem+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestItem+CoreDataClass.swift"; sourceTree = "<group>"; };
+		37AE0005257D5D03002C889E /* TestItem+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestItem+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		37AEFFC2257D2711002C889E /* TechnoparkDataStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechnoparkDataStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37AEFFC5257D2711002C889E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		37AEFFC7257D2711002C889E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		37AEFFCC257D2711002C889E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		37AEFFCE257D2714002C889E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		37AEFFD1257D2714002C889E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		37AEFFD3257D2714002C889E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37AEFFDB257D276C002C889E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		37AEFFE1257D34DA002C889E /* UserDefaultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsViewController.swift; sourceTree = "<group>"; };
+		37AEFFE6257D3867002C889E /* FileManagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerViewController.swift; sourceTree = "<group>"; };
+		37AEFFEC257D57F0002C889E /* ManualFetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManualFetchViewController.swift; sourceTree = "<group>"; };
+		37AEFFF1257D58E5002C889E /* TechnoparkCoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TechnoparkCoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		9DCEC2D9122EFD0CDCDCF923 /* Pods_TechnoparkDataStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechnoparkDataStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B4EB871F73610A5EDE2AAF /* Pods-TechnoparkDataStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnoparkDataStorage.debug.xcconfig"; path = "Target Support Files/Pods-TechnoparkDataStorage/Pods-TechnoparkDataStorage.debug.xcconfig"; sourceTree = "<group>"; };
+		F85F4C92DC165CE3BC48D083 /* Pods-TechnoparkDataStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechnoparkDataStorage.release.xcconfig"; path = "Target Support Files/Pods-TechnoparkDataStorage/Pods-TechnoparkDataStorage.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		37AEFFBF257D2711002C889E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76BEDA2F8630B4C56F48857C /* Pods_TechnoparkDataStorage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13C0AA68351B32155BBA817E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DCEC2D9122EFD0CDCDCF923 /* Pods_TechnoparkDataStorage.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3730E72E257E534C0016E52E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3730E72F257E535C0016E52E /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		378B728B257E27520049C32C /* AutoFetch */ = {
+			isa = PBXGroup;
+			children = (
+				378B728C257E276A0049C32C /* AutoFetchViewController.swift */,
+			);
+			path = AutoFetch;
+			sourceTree = "<group>";
+		};
+		378B7290257E3C460049C32C /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				378B7291257E3C5A0049C32C /* DataManager.swift */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		378B7294257E4EF00049C32C /* RealmExample */ = {
+			isa = PBXGroup;
+			children = (
+				3730E72E257E534C0016E52E /* Model */,
+				3730E733257E54630016E52E /* RealmExampleViewController.swift */,
+			);
+			path = RealmExample;
+			sourceTree = "<group>";
+		};
+		37AEFFB9257D2710002C889E = {
+			isa = PBXGroup;
+			children = (
+				37AEFFC4257D2711002C889E /* TechnoparkDataStorage */,
+				37AEFFC3257D2711002C889E /* Products */,
+				D832209108C5B6AA81D1CC94 /* Pods */,
+				13C0AA68351B32155BBA817E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		37AEFFC3257D2711002C889E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				37AEFFC2257D2711002C889E /* TechnoparkDataStorage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		37AEFFC4257D2711002C889E /* TechnoparkDataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				378B7294257E4EF00049C32C /* RealmExample */,
+				37AEFFE9257D546F002C889E /* CoreDataExample */,
+				37AEFFE5257D385D002C889E /* FileManagerExample */,
+				37AEFFE0257D34C3002C889E /* UserDefaultsExample */,
+				37AEFFDA257D275B002C889E /* ListViewController */,
+				37AEFFC5257D2711002C889E /* AppDelegate.swift */,
+				37AEFFC7257D2711002C889E /* SceneDelegate.swift */,
+				37AEFFCB257D2711002C889E /* Main.storyboard */,
+				37AEFFCE257D2714002C889E /* Assets.xcassets */,
+				37AEFFD0257D2714002C889E /* LaunchScreen.storyboard */,
+				37AEFFD3257D2714002C889E /* Info.plist */,
+			);
+			path = TechnoparkDataStorage;
+			sourceTree = "<group>";
+		};
+		37AEFFDA257D275B002C889E /* ListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				37AEFFDB257D276C002C889E /* ListViewController.swift */,
+			);
+			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		37AEFFE0257D34C3002C889E /* UserDefaultsExample */ = {
+			isa = PBXGroup;
+			children = (
+				37AEFFE1257D34DA002C889E /* UserDefaultsViewController.swift */,
+			);
+			path = UserDefaultsExample;
+			sourceTree = "<group>";
+		};
+		37AEFFE5257D385D002C889E /* FileManagerExample */ = {
+			isa = PBXGroup;
+			children = (
+				37AEFFE6257D3867002C889E /* FileManagerViewController.swift */,
+			);
+			path = FileManagerExample;
+			sourceTree = "<group>";
+		};
+		37AEFFE9257D546F002C889E /* CoreDataExample */ = {
+			isa = PBXGroup;
+			children = (
+				378B7290257E3C460049C32C /* DataManager */,
+				378B728B257E27520049C32C /* AutoFetch */,
+				37AEFFEF257D58D6002C889E /* Model */,
+				37AEFFEB257D57E2002C889E /* ManualFetch */,
+			);
+			path = CoreDataExample;
+			sourceTree = "<group>";
+		};
+		37AEFFEB257D57E2002C889E /* ManualFetch */ = {
+			isa = PBXGroup;
+			children = (
+				37AEFFEC257D57F0002C889E /* ManualFetchViewController.swift */,
+			);
+			path = ManualFetch;
+			sourceTree = "<group>";
+		};
+		37AEFFEF257D58D6002C889E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37AEFFF4257D5B59002C889E /* ManagedObjects */,
+				37AEFFF0257D58E5002C889E /* TechnoparkCoreDataModel.xcdatamodeld */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		37AEFFF4257D5B59002C889E /* ManagedObjects */ = {
+			isa = PBXGroup;
+			children = (
+				37AE0004257D5D03002C889E /* TestItem+CoreDataClass.swift */,
+				37AE0005257D5D03002C889E /* TestItem+CoreDataProperties.swift */,
+			);
+			path = ManagedObjects;
+			sourceTree = "<group>";
+		};
+		D832209108C5B6AA81D1CC94 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5B4EB871F73610A5EDE2AAF /* Pods-TechnoparkDataStorage.debug.xcconfig */,
+				F85F4C92DC165CE3BC48D083 /* Pods-TechnoparkDataStorage.release.xcconfig */,
+			);
+			name = Pods;
+			path = TechnoparkDataStorage/Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		37AEFFC1257D2711002C889E /* TechnoparkDataStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 37AEFFD6257D2714002C889E /* Build configuration list for PBXNativeTarget "TechnoparkDataStorage" */;
+			buildPhases = (
+				40589224A05AB70226B75ABA /* [CP] Check Pods Manifest.lock */,
+				37AEFFBE257D2711002C889E /* Sources */,
+				37AEFFBF257D2711002C889E /* Frameworks */,
+				37AEFFC0257D2711002C889E /* Resources */,
+				050D8B3CE9E7A1E3C363F107 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TechnoparkDataStorage;
+			productName = TechnoparkDataStorage;
+			productReference = 37AEFFC2257D2711002C889E /* TechnoparkDataStorage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		37AEFFBA257D2710002C889E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					37AEFFC1257D2711002C889E = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 37AEFFBD257D2710002C889E /* Build configuration list for PBXProject "TechnoparkDataStorage" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 37AEFFB9257D2710002C889E;
+			productRefGroup = 37AEFFC3257D2711002C889E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				37AEFFC1257D2711002C889E /* TechnoparkDataStorage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37AEFFC0257D2711002C889E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AEFFD2257D2714002C889E /* LaunchScreen.storyboard in Resources */,
+				37AEFFCF257D2714002C889E /* Assets.xcassets in Resources */,
+				37AEFFCD257D2711002C889E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		050D8B3CE9E7A1E3C363F107 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechnoparkDataStorage/Pods-TechnoparkDataStorage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TechnoparkDataStorage/Pods-TechnoparkDataStorage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TechnoparkDataStorage/Pods-TechnoparkDataStorage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40589224A05AB70226B75ABA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechnoparkDataStorage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		37AEFFBE257D2711002C889E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37AEFFE7257D3867002C889E /* FileManagerViewController.swift in Sources */,
+				37AEFFF2257D58E5002C889E /* TechnoparkCoreDataModel.xcdatamodeld in Sources */,
+				378B728D257E276B0049C32C /* AutoFetchViewController.swift in Sources */,
+				3730E734257E54630016E52E /* RealmExampleViewController.swift in Sources */,
+				37AE0006257D5D03002C889E /* TestItem+CoreDataClass.swift in Sources */,
+				37AEFFC6257D2711002C889E /* AppDelegate.swift in Sources */,
+				37AE0007257D5D03002C889E /* TestItem+CoreDataProperties.swift in Sources */,
+				3730E730257E535C0016E52E /* Person.swift in Sources */,
+				37AEFFDC257D276C002C889E /* ListViewController.swift in Sources */,
+				37AEFFED257D57F0002C889E /* ManualFetchViewController.swift in Sources */,
+				378B7292257E3C5A0049C32C /* DataManager.swift in Sources */,
+				37AEFFE2257D34DA002C889E /* UserDefaultsViewController.swift in Sources */,
+				37AEFFC8257D2711002C889E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		37AEFFCB257D2711002C889E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37AEFFCC257D2711002C889E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		37AEFFD0257D2714002C889E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				37AEFFD1257D2714002C889E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		37AEFFD4257D2714002C889E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		37AEFFD5257D2714002C889E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		37AEFFD7257D2714002C889E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5B4EB871F73610A5EDE2AAF /* Pods-TechnoparkDataStorage.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UJ4N3SN7L9;
+				INFOPLIST_FILE = TechnoparkDataStorage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TechnoparkDataStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		37AEFFD8257D2714002C889E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F85F4C92DC165CE3BC48D083 /* Pods-TechnoparkDataStorage.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UJ4N3SN7L9;
+				INFOPLIST_FILE = TechnoparkDataStorage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.TechnoparkDataStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		37AEFFBD257D2710002C889E /* Build configuration list for PBXProject "TechnoparkDataStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37AEFFD4257D2714002C889E /* Debug */,
+				37AEFFD5257D2714002C889E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		37AEFFD6257D2714002C889E /* Build configuration list for PBXNativeTarget "TechnoparkDataStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				37AEFFD7257D2714002C889E /* Debug */,
+				37AEFFD8257D2714002C889E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		37AEFFF0257D58E5002C889E /* TechnoparkCoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				37AEFFF1257D58E5002C889E /* TechnoparkCoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 37AEFFF1257D58E5002C889E /* TechnoparkCoreDataModel.xcdatamodel */;
+			path = TechnoparkCoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 37AEFFBA257D2710002C889E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module tutorialpd {
+  umbrella header "tutorialpd-umbrella.h"
+
+  export *
+  module * { export * }
+}

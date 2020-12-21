@@ -1,0 +1,22 @@
+{
+  "name": "tutorialpd",
+  "version": "1",
+  "summary": "Test my library",
+  "description": "Some custom description",
+  "homepage": "https://mail.ru",
+  "license": "MIT",
+  "authors": {
+    "Pavel Nosov": "p.nosov@corp.mail.ru"
+  },
+  "platforms": {
+    "ios": "13.0"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": [
+    "Classes/**/*.{h,m}",
+    "tutorial/GameCharacter.swift"
+  ],
+  "exclude_files": "Classes/Exclude"
+}

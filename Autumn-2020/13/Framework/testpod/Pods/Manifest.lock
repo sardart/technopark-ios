@@ -1,0 +1,16 @@
+PODS:
+  - tutorialpd (1)
+
+DEPENDENCIES:
+  - tutorialpd (from `../tutorial`)
+
+EXTERNAL SOURCES:
+  tutorialpd:
+    :path: "../tutorial"
+
+SPEC CHECKSUMS:
+  tutorialpd: ba51daee16038191258d77aced4c44091b13af75
+
+PODFILE CHECKSUM: 3c8223f20f01d6a1cbc828e90c161f74ad9d4e77
+
+COCOAPODS: 1.10.0

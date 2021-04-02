@@ -1,0 +1,20 @@
+PODS:
+  - Kingfisher (6.1.1)
+  - PinLayout (1.9.3)
+
+DEPENDENCIES:
+  - Kingfisher
+  - PinLayout
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - Kingfisher
+    - PinLayout
+
+SPEC CHECKSUMS:
+  Kingfisher: 676d63307fbef6ed5d5ed400bff36983480d7500
+  PinLayout: 4d8733121f8687edcc8f00c19bf1379d12808767
+
+PODFILE CHECKSUM: ec1501957504b547f6992d1ad957f217492fda4c
+
+COCOAPODS: 1.10.0

@@ -7,13 +7,6 @@
 
 import Foundation
 
-struct City {
-    let title: String
-    let temperature: Int
-    let dateUpdated: Date
-    let systemImageName: String
-}
-
 struct CityViewModel {
     let title: String
     let temperature: String

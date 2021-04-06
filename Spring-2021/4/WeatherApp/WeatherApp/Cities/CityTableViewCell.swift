@@ -27,7 +27,16 @@ class CityTableViewCell: UITableViewCell {
         titleLabel.font = .systemFont(ofSize: 28, weight: .semibold)
         dateUpdatedLabel.textColor = .darkGray
         temperatureLabel.font = .systemFont(ofSize: 48, weight: .medium)
-        backgroundColor = UIColor.lightGray.withAlphaComponent(0.5)
+        backgroundColor = UIColor.white
+        
+        contentView.layer.shadowColor = UIColor.black.cgColor
+        contentView.layer.shadowRadius = 0.5
+        contentView.layer.shadowOffset = CGSize(width: 0.5, height: 0.5)
+        contentView.layer.shadowOpacity = 0.8
+        contentView.layer.cornerRadius = 8
+        contentView.backgroundColor = UIColor.white
+        
+        selectionStyle = .none
         
         [titleLabel, dateUpdatedLabel, iconImageView, temperatureLabel].forEach {
             contentView.addSubview($0)
@@ -36,6 +45,10 @@ class CityTableViewCell: UITableViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
+        
+        contentView.pin
+            .horizontally(12)
+            .vertically(18)
         
         titleLabel.pin
             .bottom(8)
@@ -52,7 +65,7 @@ class CityTableViewCell: UITableViewCell {
         iconImageView.pin
             .size(24)
             .above(of: titleLabel)
-            .after(of: dateUpdatedLabel, aligned: .center)
+            .after(of: dateUpdatedLabel)
             .marginLeft(8)
         
         temperatureLabel.pin
@@ -62,13 +75,9 @@ class CityTableViewCell: UITableViewCell {
             .vCenter()
     }
 
-    func configure(with model: City) {
+    func configure(with model: CityViewModel) {
         titleLabel.text = model.title
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.timeStyle = .short
-        
-        dateUpdatedLabel.text = dateFormatter.string(from: model.dateUpdated)
+        dateUpdatedLabel.text = model.dateUpdate
         iconImageView.image = UIImage(systemName: model.systemImageName)
         temperatureLabel.text = "\(model.temperature)˚C"
     }

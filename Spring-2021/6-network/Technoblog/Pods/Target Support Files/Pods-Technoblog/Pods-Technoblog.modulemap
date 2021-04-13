@@ -1,0 +1,6 @@
+framework module Pods_Technoblog {
+  umbrella header "Pods-Technoblog-umbrella.h"
+
+  export *
+  module * { export * }
+}

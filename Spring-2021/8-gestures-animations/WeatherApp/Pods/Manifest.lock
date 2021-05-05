@@ -1,0 +1,16 @@
+PODS:
+  - PinLayout (1.9.3)
+
+DEPENDENCIES:
+  - PinLayout
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - PinLayout
+
+SPEC CHECKSUMS:
+  PinLayout: 4d8733121f8687edcc8f00c19bf1379d12808767
+
+PODFILE CHECKSUM: 6d9a463147a981a454d5f15d7f1f2f396dd3fb6a
+
+COCOAPODS: 1.10.0

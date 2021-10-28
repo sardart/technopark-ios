@@ -14,7 +14,7 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
 
         
-        products = ProductManager.shared.loadProducts()
+        //products = ProductManager.shared.loadProducts()
         tableView.separatorStyle = .none
     }
 

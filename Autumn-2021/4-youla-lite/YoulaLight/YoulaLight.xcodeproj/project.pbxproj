@@ -24,6 +24,7 @@
 		18F0726B2717166300DDB860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F072692717166300DDB860 /* Main.storyboard */; };
 		18F0726D2717166500DDB860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F0726C2717166500DDB860 /* Assets.xcassets */; };
 		18F072702717166500DDB860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F0726E2717166500DDB860 /* LaunchScreen.storyboard */; };
+		C81E99012729ABB700DD3189 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81E99002729ABB700DD3189 /* CollectionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		18F0726C2717166500DDB860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F0726F2717166500DDB860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18F072712717166500DDB860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81E99002729ABB700DD3189 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		186F979D271760BE00868AFF /* Collection */ = {
 			isa = PBXGroup;
 			children = (
+				C81E99002729ABB700DD3189 /* CollectionModel.swift */,
 				186F978F27174EDB00868AFF /* CollectionViewController.swift */,
 				186F979127174FD200868AFF /* CollectionViewCell.swift */,
 				186F979227174FD200868AFF /* CollectionViewCell.xib */,
@@ -207,6 +210,7 @@
 				186F978827173D2000868AFF /* ProductTableViewCell.swift in Sources */,
 				186F97992717589200868AFF /* ProductViewController.swift in Sources */,
 				186F978E2717494300868AFF /* NetworkImageView.swift in Sources */,
+				C81E99012729ABB700DD3189 /* CollectionModel.swift in Sources */,
 				18F072682717166300DDB860 /* ViewController.swift in Sources */,
 				186F978C2717470D00868AFF /* ProductManager.swift in Sources */,
 				18F072642717166300DDB860 /* AppDelegate.swift in Sources */,

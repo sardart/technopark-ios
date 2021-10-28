@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+protocol CollectionViewControllerInput: AnyObject {
+    func didReceive(_ products: [Product])
+}
+
 class CollectionViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -15,20 +19,30 @@ class CollectionViewController: UIViewController {
     private let cellsOffset: CGFloat = 8
     private let numberOfItemsPerRow: CGFloat = 2
     
+    private let model: CollectionModelDescription = CollectionModel()
+    
     private var products: [Product] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        products = ProductManager.shared.loadProducts()
+        //products = ProductManager.shared.loadProducts()
+        model.loadProducts()
         
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.collectionViewLayout = UICollectionViewFlowLayout()
         collectionView.register(.init(nibName: "CollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CollectionViewCell")
-    }
+        
+        model.output = self
+    }    
+}
 
-    
+extension CollectionViewController: CollectionViewControllerInput {
+    func didReceive(_ products: [Product]) {
+        self.products = products
+        collectionView.reloadData()
+    }
 }
 
 extension CollectionViewController: UICollectionViewDelegate, UICollectionViewDataSource {

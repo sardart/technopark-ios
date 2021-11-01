@@ -1,0 +1,514 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		186155A9272C68BA0004AB4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186155A8272C68BA0004AB4A /* GoogleService-Info.plist */; };
+		186155AC272C69DE0004AB4A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 186155AB272C69DE0004AB4A /* FirebaseAuth */; };
+		186155AE272C69DE0004AB4A /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 186155AD272C69DE0004AB4A /* FirebaseFirestore */; };
+		186155B0272C69DE0004AB4A /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 186155AF272C69DE0004AB4A /* FirebaseStorage */; };
+		186155B2272C70160004AB4A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186155B1272C70160004AB4A /* ImageLoader.swift */; };
+		186F97862717326000868AFF /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F97852717326000868AFF /* TableViewController.swift */; };
+		186F978827173D2000868AFF /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F978727173D2000868AFF /* ProductTableViewCell.swift */; };
+		186F978A271745DC00868AFF /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F9789271745DC00868AFF /* Product.swift */; };
+		186F978C2717470D00868AFF /* ProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F978B2717470D00868AFF /* ProductManager.swift */; };
+		186F978E2717494300868AFF /* NetworkImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F978D2717494300868AFF /* NetworkImageView.swift */; };
+		186F979027174EDC00868AFF /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F978F27174EDB00868AFF /* CollectionViewController.swift */; };
+		186F979327174FD200868AFF /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F979127174FD200868AFF /* CollectionViewCell.swift */; };
+		186F979427174FD200868AFF /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186F979227174FD200868AFF /* CollectionViewCell.xib */; };
+		186F9797271754A000868AFF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 186F9796271754A000868AFF /* Kingfisher */; };
+		186F97992717589200868AFF /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186F97982717589200868AFF /* ProductViewController.swift */; };
+		186F979C27175AF300868AFF /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = 186F979B27175AF300868AFF /* PinLayout */; };
+		18F072642717166300DDB860 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F072632717166300DDB860 /* AppDelegate.swift */; };
+		18F072662717166300DDB860 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F072652717166300DDB860 /* SceneDelegate.swift */; };
+		18F072682717166300DDB860 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F072672717166300DDB860 /* ViewController.swift */; };
+		18F0726B2717166300DDB860 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F072692717166300DDB860 /* Main.storyboard */; };
+		18F0726D2717166500DDB860 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F0726C2717166500DDB860 /* Assets.xcassets */; };
+		18F072702717166500DDB860 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18F0726E2717166500DDB860 /* LaunchScreen.storyboard */; };
+		C81E99012729ABB700DD3189 /* CollectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81E99002729ABB700DD3189 /* CollectionModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		186155A8272C68BA0004AB4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		186155B1272C70160004AB4A /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		186F97852717326000868AFF /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		186F978727173D2000868AFF /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		186F9789271745DC00868AFF /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		186F978B2717470D00868AFF /* ProductManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductManager.swift; sourceTree = "<group>"; };
+		186F978D2717494300868AFF /* NetworkImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkImageView.swift; sourceTree = "<group>"; };
+		186F978F27174EDB00868AFF /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		186F979127174FD200868AFF /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		186F979227174FD200868AFF /* CollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		186F97982717589200868AFF /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		18F072602717166200DDB860 /* YoulaLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoulaLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F072632717166300DDB860 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18F072652717166300DDB860 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		18F072672717166300DDB860 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18F0726A2717166300DDB860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18F0726C2717166500DDB860 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18F0726F2717166500DDB860 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18F072712717166500DDB860 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C81E99002729ABB700DD3189 /* CollectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18F0725D2717166200DDB860 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186F979C27175AF300868AFF /* PinLayout in Frameworks */,
+				186155AE272C69DE0004AB4A /* FirebaseFirestore in Frameworks */,
+				186155AC272C69DE0004AB4A /* FirebaseAuth in Frameworks */,
+				186155B0272C69DE0004AB4A /* FirebaseStorage in Frameworks */,
+				186F9797271754A000868AFF /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186F979D271760BE00868AFF /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				C81E99002729ABB700DD3189 /* CollectionModel.swift */,
+				186F978F27174EDB00868AFF /* CollectionViewController.swift */,
+				186F979127174FD200868AFF /* CollectionViewCell.swift */,
+				186F979227174FD200868AFF /* CollectionViewCell.xib */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		186F979E271760CA00868AFF /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				186F97852717326000868AFF /* TableViewController.swift */,
+				186F978727173D2000868AFF /* ProductTableViewCell.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		186F979F271760D300868AFF /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				186F9789271745DC00868AFF /* Product.swift */,
+				186F978B2717470D00868AFF /* ProductManager.swift */,
+				186F97982717589200868AFF /* ProductViewController.swift */,
+				186155B1272C70160004AB4A /* ImageLoader.swift */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		18F072572717166200DDB860 = {
+			isa = PBXGroup;
+			children = (
+				18F072622717166200DDB860 /* YoulaLight */,
+				18F072612717166200DDB860 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18F072612717166200DDB860 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18F072602717166200DDB860 /* YoulaLight.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18F072622717166200DDB860 /* YoulaLight */ = {
+			isa = PBXGroup;
+			children = (
+				18F072632717166300DDB860 /* AppDelegate.swift */,
+				18F072652717166300DDB860 /* SceneDelegate.swift */,
+				18F072672717166300DDB860 /* ViewController.swift */,
+				186F978D2717494300868AFF /* NetworkImageView.swift */,
+				18F072692717166300DDB860 /* Main.storyboard */,
+				18F0726C2717166500DDB860 /* Assets.xcassets */,
+				18F0726E2717166500DDB860 /* LaunchScreen.storyboard */,
+				18F072712717166500DDB860 /* Info.plist */,
+				186155A8272C68BA0004AB4A /* GoogleService-Info.plist */,
+				186F979E271760CA00868AFF /* Table */,
+				186F979F271760D300868AFF /* Product */,
+				186F979D271760BE00868AFF /* Collection */,
+			);
+			path = YoulaLight;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18F0725F2717166200DDB860 /* YoulaLight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F072742717166500DDB860 /* Build configuration list for PBXNativeTarget "YoulaLight" */;
+			buildPhases = (
+				18F0725C2717166200DDB860 /* Sources */,
+				18F0725D2717166200DDB860 /* Frameworks */,
+				18F0725E2717166200DDB860 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YoulaLight;
+			packageProductDependencies = (
+				186F9796271754A000868AFF /* Kingfisher */,
+				186F979B27175AF300868AFF /* PinLayout */,
+				186155AB272C69DE0004AB4A /* FirebaseAuth */,
+				186155AD272C69DE0004AB4A /* FirebaseFirestore */,
+				186155AF272C69DE0004AB4A /* FirebaseStorage */,
+			);
+			productName = YoulaLight;
+			productReference = 18F072602717166200DDB860 /* YoulaLight.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18F072582717166200DDB860 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					18F0725F2717166200DDB860 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 18F0725B2717166200DDB860 /* Build configuration list for PBXProject "YoulaLight" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18F072572717166200DDB860;
+			packageReferences = (
+				186F9795271754A000868AFF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				186F979A27175AF300868AFF /* XCRemoteSwiftPackageReference "PinLayout" */,
+				186155AA272C69DE0004AB4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 18F072612717166200DDB860 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18F0725F2717166200DDB860 /* YoulaLight */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18F0725E2717166200DDB860 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186155A9272C68BA0004AB4A /* GoogleService-Info.plist in Resources */,
+				18F072702717166500DDB860 /* LaunchScreen.storyboard in Resources */,
+				18F0726D2717166500DDB860 /* Assets.xcassets in Resources */,
+				186F979427174FD200868AFF /* CollectionViewCell.xib in Resources */,
+				18F0726B2717166300DDB860 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18F0725C2717166200DDB860 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				186F979327174FD200868AFF /* CollectionViewCell.swift in Sources */,
+				186F979027174EDC00868AFF /* CollectionViewController.swift in Sources */,
+				186F978827173D2000868AFF /* ProductTableViewCell.swift in Sources */,
+				186F97992717589200868AFF /* ProductViewController.swift in Sources */,
+				186F978E2717494300868AFF /* NetworkImageView.swift in Sources */,
+				C81E99012729ABB700DD3189 /* CollectionModel.swift in Sources */,
+				18F072682717166300DDB860 /* ViewController.swift in Sources */,
+				186F978C2717470D00868AFF /* ProductManager.swift in Sources */,
+				18F072642717166300DDB860 /* AppDelegate.swift in Sources */,
+				18F072662717166300DDB860 /* SceneDelegate.swift in Sources */,
+				186F97862717326000868AFF /* TableViewController.swift in Sources */,
+				186F978A271745DC00868AFF /* Product.swift in Sources */,
+				186155B2272C70160004AB4A /* ImageLoader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18F072692717166300DDB860 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F0726A2717166300DDB860 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		18F0726E2717166500DDB860 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18F0726F2717166500DDB860 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18F072722717166500DDB860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18F072732717166500DDB860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18F072752717166500DDB860 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G3W5J6328W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YoulaLight/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sardart.YoulaLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18F072762717166500DDB860 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G3W5J6328W;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = YoulaLight/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sardart.YoulaLight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18F0725B2717166200DDB860 /* Build configuration list for PBXProject "YoulaLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F072722717166500DDB860 /* Debug */,
+				18F072732717166500DDB860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F072742717166500DDB860 /* Build configuration list for PBXNativeTarget "YoulaLight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F072752717166500DDB860 /* Debug */,
+				18F072762717166500DDB860 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		186155AA272C69DE0004AB4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		186F9795271754A000868AFF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		186F979A27175AF300868AFF /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		186155AB272C69DE0004AB4A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 186155AA272C69DE0004AB4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		186155AD272C69DE0004AB4A /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 186155AA272C69DE0004AB4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		186155AF272C69DE0004AB4A /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 186155AA272C69DE0004AB4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		186F9796271754A000868AFF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 186F9795271754A000868AFF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		186F979B27175AF300868AFF /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 186F979A27175AF300868AFF /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 18F072582717166200DDB860 /* Project object */;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='1. Hello world'/>
+        <page name='2. Переменные и константы'/>
+        <page name='3. Операторы'/>
+        <page name='4. Optionals'/>
+        <page name='5. Коллекции'/>
+        <page name='6. Управление потоком'/>
+        <page name='7. Функции'/>
+        <page name='8. Блоки и обработка массивов'/>
+        <page name='9. Перечисления'/>
+        <page name='Test'/>
+    </pages>
+</playground>
